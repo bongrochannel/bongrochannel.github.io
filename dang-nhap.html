@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-section input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #0056b3;
+        }
+        .form-section .switch-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .form-section .switch-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .form-section .switch-link a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Đăng nhập</h1>
+    </header>
+    <div class="container">
+        <div class="form-section">
+            <h3>Thông tin đăng nhập</h3>
+            <form action="trang-chu-dang-nhap.html" method="post">
+                <input type="text" name="username" placeholder="Tên đăng nhập" required>
+                <input type="password" name="password" placeholder="Mật khẩu" required>
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <div class="switch-link">
+                <p>Chưa có tài khoản? <a href="dang-ky.html">Tạo tài khoản ngay!</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Bóng rổ Channel. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
